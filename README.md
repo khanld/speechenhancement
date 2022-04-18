@@ -17,11 +17,12 @@ Here, we found an approach to remedy the problem of SE when adapting as front-en
 <a name="usage"></a>
 ## Usage
 ### Download checkpoints
-1. First, download the model checkpoints from this [link](https://drive.google.com/drive/folders/1ELE8qiGuIrTbU6Kj6Ljhv4v7WZho-CCJ?usp=sharing)
+
+1.First, download the model checkpoints from this [link](https://drive.google.com/drive/folders/1ELE8qiGuIrTbU6Kj6Ljhv4v7WZho-CCJ?usp=sharing)
 </br>
-2. Move the downloaded folder to the root directory and rename it as "checkpoints" ![alt text](images/project_structure.jpg)
+2.Move the downloaded folder to the root directory and rename it as "checkpoints" ![alt text](images/project_structure.jpg)
 </br>
-3. Set up environments with either Docker or Manually
+3.Set up environments with either Docker or Manually
 
 ### Docker
 
