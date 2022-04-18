@@ -69,6 +69,7 @@ def index():
                                     mix_transcript = mix_transcript)
     return render_template("index.html")
 
+# Function to enhance the noisy audio
 @app.route('/enhancefile', methods=['POST'])
 def enhance_file():
     results = {
@@ -125,6 +126,7 @@ def enhance_file():
         results["message"] = "File not supported"
         return make_response(results, 400)
 
+# Function to get the enhanced audio
 @app.route('/getenhanced', methods=['GET'])
 def get_enhanced():
     results = {
@@ -151,7 +153,7 @@ def get_enhanced():
     results["enhanced"] = enhanced.tolist()
     return make_response(results, 200)
 
-    
+# Function to get the input to ASR
 @app.route('/getmix', methods=['GET'])
 def get_mix():
     results = {
