@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Pick a file
+    </p>
+    <form method=post enctype=multipart/form-data>
+        <input type="file" name="file" />
+        <input type="submit" value="Submit">
+    </form>
+    <div>
+        <p>Noisy Speech: </p>
+        <audio controls>
+            <source src="{{ url_for('static', filename=noisyname) }}" type="audio/wav"/>
+        </audio>
+        <br>
+        <p>Noisy Transcript: {{noisy_transcript}}</p>
+    </div>
+    <div>
+        <p>Enhanced Speech: </p>
+        <audio controls>
+            <source src="{{ url_for('static', filename=enhancedname) }}" type="audio/wav"/>
+        </audio>
+        <br>
+        <p>Enhanced Transcript: {{enhanced_transcript}}</p>
+    </div>
+    <div>
+        <p>Mix Speech: </p>
+        <audio controls>
+            <source src="{{ url_for('static', filename=mixname) }}" type="audio/wav"/>
+        </audio>
+        <br>
+        <p>Mix Transcript: {{mix_transcript}}</p>
+    </div>
+</body>
+</html>

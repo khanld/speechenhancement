@@ -1,0 +1,8 @@
+Flask==2.1.1
+librosa==0.9.1
+numpy==1.21.6
+requests==2.27.1
+soundfile==0.10.3.post1
+speechbrain==0.5.11
+torch==1.11.0
+transformers==4.18.0
