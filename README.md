@@ -1,4 +1,6 @@
 # SPEECH ENHANCEMENT FOR ASR USAGE
+<meta property="og:title" content="Meta Tags">
+
 ## Table of contents
 1. [Description](#description)  
 2. [Usage](#usage)  
@@ -10,7 +12,7 @@
 ## Description
 
 This is a demo for FullSubNet Speech Enhancement for Vietnamese ASR. The Speech Enhancement model was trained on 1k3 hours of speech data with dynamic mixing (mix-on-the-fly). </br>
-Here, we found an approach to remedy the problem of SE when adapting as front-end to ASR, which causes the degradation of ASR decoding performance on clean speech. The idea is simple but can work with any SE and ASR models. 
+Here, we found an approach to remedy the problem of SE when adapting as front-end to ASR (SE causes the degradation of ASR decoding performance on clean speech). The idea is simple but can work with any SE and ASR models. 
 ![alt text](images/flow.jpg)
 
 
