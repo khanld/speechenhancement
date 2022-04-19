@@ -35,7 +35,7 @@ def enhance_and_get_mix(path, save_to_dir = False, save_dir = ''):
     files = {'file': open(path,'rb')}
     r = requests.post(url, files=files)
 
-    # Get enhanced audio
+    # Get mix audio
     filename = r.json()["filename"]
     p = "0.6" # by default
 
